@@ -3413,12 +3413,12 @@ input {
   }
 }
 
-#shop {
-  background-image: url('../images/bg-section-shop.jpg');
+#interview {
+  background-image: url('../images/bg-section-interview.jpg');
   background-repeat: no-repeat;
   background-position: center top;
 
-  .shops {
+  .interviews {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3434,12 +3434,12 @@ input {
     max-width: 960px;
   }
 
-  .shops-item {
+  .interviews-item {
     margin: 80px 0 68px;
     width: 48.4375%;
     position: relative;
 
-    .shop-body {
+    .interview-body {
       position: absolute;
       right: 6.45%;
       bottom: -68px;
@@ -3463,7 +3463,7 @@ input {
       }
     }
 
-    &:hover .shop-body {
+    &:hover .interview-body {
       box-shadow: 2px 8px 20px 0 rgba(31, 32, 68, 0.25);
       -webkit-transform: scale(1.01);
       -ms-transform: scale(1.01);
@@ -3537,7 +3537,7 @@ input {
   }
 }
 
-#pg-shop .shops-item:hover .shop-body {
+#pg-interview .interviews-item:hover .interview-body {
   .name {
     color: #127dd6;
   }
@@ -3551,11 +3551,11 @@ input {
   }
 }
 
-#pg-shopDetail {
+#pg-interviewDetail {
   .lead-inner {
     width: 100%;
 
-    .shop-lead {
+    .interview-lead {
       padding-top: 6.7%;
       font-size: 1.8rem;
       text-align: center;
@@ -3563,13 +3563,13 @@ input {
       letter-spacing: 0.25em;
     }
 
-    .bg-shop {
+    .bg-interview {
       position: absolute;
       top: 0;
       left: 0;
       width: inherit;
       height: 34vw;
-      background-image: url(../images/bg-shopDetail.jpg);
+      background-image: url(../images/bg-interviewDetail.jpg);
       background-position: bottom center;
       background-size: 100% auto;
       background-repeat: no-repeat;
@@ -3577,11 +3577,11 @@ input {
     }
   }
 
-  .shopList-Container {
+  .interviewList-Container {
     margin-top: 6.4%;
     width: 100%;
 
-    .shopList-head {
+    .interviewList-head {
       text-align: center;
 
       .title-en {
@@ -3615,21 +3615,21 @@ input {
       }
     }
 
-    .shopList-inner {
+    .interviewList-inner {
       margin-top: 4%;
       padding: 0 0 120px;
       width: 100%;
-      background-image: url(../images/bg-shopListDetail.jpg);
+      background-image: url(../images/bg-interviewListDetail.jpg);
       background-size: cover;
       background-repeat: no-repeat;
     }
 
-    .shopList {
+    .interviewList {
       margin: auto;
       max-width: 960px;
     }
 
-    .shopList-item {
+    .interviewList-item {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -3642,7 +3642,7 @@ input {
         -ms-flex-direction: row;
         flex-direction: row;
 
-        .shop-body {
+        .interview-body {
           padding-left: 30px;
         }
       }
@@ -3654,7 +3654,7 @@ input {
         -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
 
-        .shop-body {
+        .interview-body {
           padding-right: 30px;
         }
       }
@@ -3663,11 +3663,11 @@ input {
         margin-top: 9%;
       }
 
-      .shop-image {
+      .interview-image {
         width: 45%;
       }
 
-      .shop-body {
+      .interview-body {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -3679,12 +3679,12 @@ input {
         flex-direction: column;
         width: 55%;
 
-        .shop-title {
+        .interview-title {
           font-size: 2.2rem;
           font-weight: 700;
         }
 
-        .shop-caption {
+        .interview-caption {
           -webkit-box-flex: 1;
           -webkit-flex-grow: 1;
           -ms-flex-positive: 1;
@@ -3694,7 +3694,7 @@ input {
           letter-spacing: 0.15em;
         }
 
-        .shop-detail {
+        .interview-detail {
           padding: 23px;
           background-color: #fff;
 
@@ -3729,7 +3729,7 @@ input {
       }
     }
 
-    .bg-shopList {
+    .bg-interviewList {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -3743,8 +3743,8 @@ input {
  * smart phone
  * -------------------------------- */
 @media screen and (max-width: 769px) {
-  #shop {
-    .shops {
+  #interview {
+    .interviews {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -3759,15 +3759,15 @@ input {
       margin: calc(-30px + 8.5%) auto 0;
     }
 
-    .shops-item {
+    .interviews-item {
       margin: 32px 0 56px;
       width: 48.55072%;
 
-      .shop-image img {
+      .interview-image img {
         height: 32vw !important;
       }
 
-      .shop-body {
+      .interview-body {
         position: absolute;
         right: 4.5%;
         bottom: -56px;
@@ -3786,13 +3786,13 @@ input {
         }
       }
 
-      &:hover .shop-body .seeDetail::after {
+      &:hover .interview-body .seeDetail::after {
         background-image: url('../images/svg/icon-next-short-hover.svg');
       }
     }
   }
 
-  #pg-shop .shops {
+  #pg-interview .interviews {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3838,29 +3838,29 @@ input {
     }
   }
 
-  #pg-shop .shops-item:hover .shop-body .seeDetail::after {
+  #pg-interview .interviews-item:hover .interview-body .seeDetail::after {
     background-image: url('../images/svg/icon-next-short-hover.svg');
   }
 
-  #pg-shopDetail {
+  #pg-interviewDetail {
     .lead-inner {
-      .shop-lead {
+      .interview-lead {
         padding: 6.7% 4% 0;
         font-size: 1.2rem;
         line-height: 1.8;
         letter-spacing: 0;
       }
 
-      .bg-shop {
+      .bg-interview {
         height: 60vw;
         background-size: contain;
       }
     }
 
-    .shopList-Container {
+    .interviewList-Container {
       margin-top: 13.4%;
 
-      .shopList-head {
+      .interviewList-head {
         .title-en {
           font-size: 1.65rem;
         }
@@ -3876,12 +3876,12 @@ input {
         }
       }
 
-      .shopList-inner {
+      .interviewList-inner {
         margin-top: 6%;
         padding: 0 4% 60px;
       }
 
-      .shopList-item {
+      .interviewList-item {
         &:nth-child(odd), &:nth-child(even) {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
@@ -3890,7 +3890,7 @@ input {
           flex-direction: column;
         }
 
-        &:nth-child(odd) .shop-body, &:nth-child(even) .shop-body {
+        &:nth-child(odd) .interview-body, &:nth-child(even) .interview-body {
           padding-left: 0;
           padding-right: 0;
         }
@@ -3899,7 +3899,7 @@ input {
           margin-top: 12%;
         }
 
-        .shop-image {
+        .interview-image {
           width: 100%;
 
           img {
@@ -3907,20 +3907,20 @@ input {
           }
         }
 
-        .shop-body {
+        .interview-body {
           padding: 14px 0;
           width: 100%;
 
-          .shop-title {
+          .interview-title {
             font-size: 1.6rem;
           }
 
-          .shop-caption {
+          .interview-caption {
             margin-top: 3px;
             font-size: 1.2rem;
           }
 
-          .shop-detail {
+          .interview-detail {
             margin-top: 14px;
             padding: 13px;
             background-color: #fff;
@@ -3944,7 +3944,7 @@ input {
         }
       }
 
-      .bg-shopList {
+      .bg-interviewList {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -4217,7 +4217,7 @@ iframe {
   height: 740px;
 }
 
-.page-template-page-shop-detail .lead-inner {
+.page-template-page-interview-detail .lead-inner {
   margin: 0 auto;
   padding-top: 6.7%;
 }
@@ -4227,7 +4227,7 @@ iframe {
   margin: 0 auto 5%;
 }
 
-#pg-shopDetail .lead-inner p {
+#pg-interviewDetail .lead-inner p {
   padding-top: 0px;
 }
 

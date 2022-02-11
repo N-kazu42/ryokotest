@@ -1,13 +1,13 @@
-<li class="shopList-item">
-    <div class="shop-image">
+<li class="interviewList-item">
+    <div class="interview-image">
         <?php
         $image_id = get_sub_field('interview_img');
         echo wp_get_attachment_image($image_id, 'top');
         ?>
     </div>
-    <div class="shop-body">
-        <p class="shop-title"><?php the_sub_field('interview_title'); ?> </p>
-        <p class="shop-caption">
+    <div class="interview-body">
+        <p class="interview-title"><?php the_sub_field('interview_title'); ?> </p>
+        <p class="interview-caption">
             <?php the_sub_field('interview_text'); ?>
         </p>
         <!-- <div class="interview-detail">

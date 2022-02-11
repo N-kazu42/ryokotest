@@ -6,28 +6,32 @@ Template Name: インタビュー
 get_header();
 ?>
 <div class="page-inner full-width">
-  <div class="page-main" id="pg-shopDetail">
+  <div class="page-main" id="pg-interviewDetail">
     <div class="lead-inner">
 
       <?php
       if (have_posts()) : while (have_posts()) : the_post();
       ?>
-      <h2 class="title">
-        <?php  echo get_the_title(); ?>
+      <h2 class="interview-title">
+        <?php  
+              $name_title = get_the_title();
+              $name_title = str_replace("／", '<br>', $name_title,$n);
+              echo $name_title;
+        ?>
       </h2> 
          <?php the_content();
         endwhile;
       endif;
       ?>
 
-      <div class="bg-shop"></div>
+      <div class="bg-interview"></div>
     </div>
-    <div class="shopList-Container">
-      <div class="shopList-head">
+    <div class="interviewList-Container">
+      <div class="interviewList-head">
         <span class="title-en"></span>
       </div>
-      <div class="shopList-inner">
-        <ul class="shopList">
+      <div class="interviewList-inner">
+        <ul class="interviewList">
           <?php
           $interviews = array('first_interview_detail', 'second_interview_detail');
 

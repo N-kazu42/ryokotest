@@ -59,8 +59,6 @@
         </p>
       </div>
     </section>
-    
-           
 <?php else: ?>
   <div class="wrap">
     <div id="primary" class="content-area">

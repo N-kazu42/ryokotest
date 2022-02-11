@@ -3011,13 +3011,13 @@ input {
   }
 }
 
-#shop {
-  background-image: url("../images/bg-section-shop.jpg");
+#interview {
+  background-image: url("../images/bg-section-interview.jpg");
   background-repeat: no-repeat;
   background-position: center top;
 }
 
-#shop .shops {
+#interview .interviews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3030,13 +3030,13 @@ input {
   max-width: 960px;
 }
 
-#shop .shops-item {
+#interview .interviews-item {
   margin: 80px 0 68px;
   width: 48.4375%;
   position: relative;
 }
 
-#shop .shops-item .shop-body {
+#interview .interviews-item .interview-body {
   position: absolute;
   right: 6.45%;
   bottom: -68px;
@@ -3050,33 +3050,33 @@ input {
   transition: all 0.3s ease-out;
 }
 
-#shop .shops-item .shop-body .name {
+#interview .interviews-item .interview-body .name {
   font-size: 2.2rem;
 }
 
-#shop .shops-item .shop-body .location {
+#interview .interviews-item .interview-body .location {
   font-size: 2.0rem;
   font-family: 'Vollkorn', serif;
   font-style: italic;
   color: #bdbdbd;
 }
 
-#shop .shops-item:hover .shop-body {
+#interview .interviews-item:hover .interview-body {
   -webkit-box-shadow: 2px 8px 20px 0 rgba(31, 32, 68, 0.25);
           box-shadow: 2px 8px 20px 0 rgba(31, 32, 68, 0.25);
   -webkit-transform: scale(1.01);
   transform: scale(1.01);
 }
 
-#shop .shops-item:hover .shop-body .name {
+#interview .interviews-item:hover .interview-body .name {
   color: #127dd6;
 }
 
-#shop .shops-item:hover .shop-body .seeDetail {
+#interview .interviews-item:hover .interview-body .seeDetail {
   color: #127dd6;
 }
 
-#shop .shops-item:hover .shop-body .seeDetail::after {
+#interview .interviews-item:hover .interview-body .seeDetail::after {
   background-image: url("../images/svg/icon-next-hover.svg");
 }
 
@@ -3129,23 +3129,23 @@ input {
   transform: scale(1.01);
 }
 
-#pg-shop .shops-item:hover .shop-body .name {
+#pg-interview .interviews-item:hover .interview-body .name {
   color: #127dd6;
 }
 
-#pg-shop .shops-item:hover .shop-body .seeDetail {
+#pg-interview .interviews-item:hover .interview-body .seeDetail {
   color: #127dd6;
 }
 
-#pg-shop .shops-item:hover .shop-body .seeDetail::after {
+#pg-interview .interviews-item:hover .interview-body .seeDetail::after {
   background-image: url("../images/svg/icon-next-hover.svg");
 }
 
-#pg-shopDetail .lead-inner {
+#pg-interviewDetail .lead-inner {
   width: 100%;
 }
 
-#pg-shopDetail .lead-inner .shop-lead {
+#pg-interviewDetail .lead-inner .interview-lead {
   padding-top: 6.7%;
   font-size: 1.8rem;
   text-align: center;
@@ -3153,36 +3153,36 @@ input {
   letter-spacing: 0.25em;
 }
 
-#pg-shopDetail .lead-inner .bg-shop {
+#pg-interviewDetail .lead-inner .bg-interview {
   position: absolute;
   top: 0;
   left: 0;
   width: inherit;
   height: 34vw;
-  background-image: url(../images/bg-shopDetail.jpg);
+  background-image: url(../images/bg-interviewDetail.jpg);
   background-position: bottom center;
   background-size: 100% auto;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
-#pg-shopDetail .shopList-Container {
+#pg-interviewDetail .interviewList-Container {
   margin-top: 6.4%;
   width: 100%;
 }
 
-#pg-shopDetail .shopList-Container .shopList-head {
+#pg-interviewDetail .interviewList-Container .interviewList-head {
   text-align: center;
 }
 
-#pg-shopDetail .shopList-Container .shopList-head .title-en {
+#pg-interviewDetail .interviewList-Container .interviewList-head .title-en {
   font-size: 2.2rem;
   font-family: 'Vollkorn', serif;
   font-style: italic;
   color: #127dd6;
 }
 
-#pg-shopDetail .shopList-Container .shopList-head .title {
+#pg-interviewDetail .interviewList-Container .interviewList-head .title {
   margin-top: 12px;
   padding-bottom: 30px;
   font-size: 3.8rem;
@@ -3192,7 +3192,7 @@ input {
   position: relative;
 }
 
-#pg-shopDetail .shopList-Container .shopList-head .title::after {
+#pg-interviewDetail .interviewList-Container .interviewList-head .title::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -3204,57 +3204,57 @@ input {
   background-color: #343434;
 }
 
-#pg-shopDetail .shopList-Container .shopList-inner {
+#pg-interviewDetail .interviewList-Container .interviewList-inner {
   margin-top: 4%;
   padding: 0 0 120px;
   width: 100%;
-  background-image: url(../images/bg-shopListDetail.jpg);
+  background-image: url(../images/bg-interviewListDetail.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#pg-shopDetail .shopList-Container .shopList {
+#pg-interviewDetail .interviewList-Container .interviewList {
   margin: auto;
   max-width: 960px;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item {
+#pg-interviewDetail .interviewList-Container .interviewList-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item:nth-child(odd) {
+#pg-interviewDetail .interviewList-Container .interviewList-item:nth-child(odd) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item:nth-child(odd) .shop-body {
+#pg-interviewDetail .interviewList-Container .interviewList-item:nth-child(odd) .interview-body {
   padding-left: 30px;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item:nth-child(even) {
+#pg-interviewDetail .interviewList-Container .interviewList-item:nth-child(even) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item:nth-child(even) .shop-body {
+#pg-interviewDetail .interviewList-Container .interviewList-item:nth-child(even) .interview-body {
   padding-right: 30px;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item:not(:first-child) {
+#pg-interviewDetail .interviewList-Container .interviewList-item:not(:first-child) {
   margin-top: 9%;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item .shop-image {
+#pg-interviewDetail .interviewList-Container .interviewList-item .interview-image {
   width: 45%;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item .shop-body {
+#pg-interviewDetail .interviewList-Container .interviewList-item .interview-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3265,12 +3265,12 @@ input {
   width: 55%;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-title {
+#pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-title {
   font-size: 2.2rem;
   font-weight: 700;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-caption {
+#pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-caption {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -3279,12 +3279,12 @@ input {
   letter-spacing: 0.15em;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-detail {
+#pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-detail {
   padding: 23px;
   background-color: #fff;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-detail dl {
+#pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-detail dl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3296,21 +3296,21 @@ input {
   line-height: 1;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-detail dl + dl {
+#pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-detail dl + dl {
   margin-top: 15px;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-detail dl dt {
+#pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-detail dl dt {
   min-width: 22%;
 }
 
-#pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-detail dl dd {
+#pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-detail dl dd {
   padding-left: 15px;
   min-width: 78%;
   border-left: 1px solid #d0d0d0;
 }
 
-#pg-shopDetail .shopList-Container .bg-shopList {
+#pg-interviewDetail .interviewList-Container .bg-interviewList {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3322,7 +3322,7 @@ input {
  * smart phone
  * -------------------------------- */
 @media screen and (max-width: 769px) {
-  #shop .shops {
+  #interview .interviews {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3333,14 +3333,14 @@ input {
     flex-wrap: wrap;
     margin: calc(-30px + 8.5%) auto 0;
   }
-  #shop .shops-item {
+  #interview .interviews-item {
     margin: 32px 0 56px;
     width: 48.55072%;
   }
-  #shop .shops-item .shop-image img {
+  #interview .interviews-item .interview-image img {
     height: 32vw !important;
   }
-  #shop .shops-item .shop-body {
+  #interview .interviews-item .interview-body {
     position: absolute;
     right: 4.5%;
     bottom: -56px;
@@ -3351,16 +3351,16 @@ input {
     -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.07);
             box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.07);
   }
-  #shop .shops-item .shop-body .name {
+  #interview .interviews-item .interview-body .name {
     font-size: 1.4rem;
   }
-  #shop .shops-item .shop-body .location {
+  #interview .interviews-item .interview-body .location {
     font-size: 1.2rem;
   }
-  #shop .shops-item:hover .shop-body .seeDetail::after {
+  #interview .interviews-item:hover .interview-body .seeDetail::after {
     background-image: url("../images/svg/icon-next-short-hover.svg");
   }
-  #pg-shop .shops {
+  #pg-interview .interviews {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3396,85 +3396,85 @@ input {
     margin: 5px 0 7px;
     font-size: 1.15rem;
   }
-  #pg-shop .shops-item:hover .shop-body .seeDetail::after {
+  #pg-interview .interviews-item:hover .interview-body .seeDetail::after {
     background-image: url("../images/svg/icon-next-short-hover.svg");
   }
-  #pg-shopDetail .lead-inner .shop-lead {
+  #pg-interviewDetail .lead-inner .interview-lead {
     padding: 6.7% 4% 0;
     font-size: 1.2rem;
     line-height: 1.8;
     letter-spacing: 0;
   }
-  #pg-shopDetail .lead-inner .bg-shop {
+  #pg-interviewDetail .lead-inner .bg-interview {
     height: 60vw;
     background-size: contain;
   }
-  #pg-shopDetail .shopList-Container {
+  #pg-interviewDetail .interviewList-Container {
     margin-top: 13.4%;
   }
-  #pg-shopDetail .shopList-Container .shopList-head .title-en {
+  #pg-interviewDetail .interviewList-Container .interviewList-head .title-en {
     font-size: 1.65rem;
   }
-  #pg-shopDetail .shopList-Container .shopList-head .title {
+  #pg-interviewDetail .interviewList-Container .interviewList-head .title {
     margin-top: 8px;
     padding-bottom: 15px;
     font-size: 2.1rem;
   }
-  #pg-shopDetail .shopList-Container .shopList-head .title::after {
+  #pg-interviewDetail .interviewList-Container .interviewList-head .title::after {
     width: 20px;
   }
-  #pg-shopDetail .shopList-Container .shopList-inner {
+  #pg-interviewDetail .interviewList-Container .interviewList-inner {
     margin-top: 6%;
     padding: 0 4% 60px;
   }
-  #pg-shopDetail .shopList-Container .shopList-item:nth-child(odd), #pg-shopDetail .shopList-Container .shopList-item:nth-child(even) {
+  #pg-interviewDetail .interviewList-Container .interviewList-item:nth-child(odd), #pg-interviewDetail .interviewList-Container .interviewList-item:nth-child(even) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  #pg-shopDetail .shopList-Container .shopList-item:nth-child(odd) .shop-body, #pg-shopDetail .shopList-Container .shopList-item:nth-child(even) .shop-body {
+  #pg-interviewDetail .interviewList-Container .interviewList-item:nth-child(odd) .interview-body, #pg-interviewDetail .interviewList-Container .interviewList-item:nth-child(even) .interview-body {
     padding-left: 0;
     padding-right: 0;
   }
-  #pg-shopDetail .shopList-Container .shopList-item:not(:first-child) {
+  #pg-interviewDetail .interviewList-Container .interviewList-item:not(:first-child) {
     margin-top: 12%;
   }
-  #pg-shopDetail .shopList-Container .shopList-item .shop-image {
+  #pg-interviewDetail .interviewList-Container .interviewList-item .interview-image {
     width: 100%;
   }
-  #pg-shopDetail .shopList-Container .shopList-item .shop-image img {
+  #pg-interviewDetail .interviewList-Container .interviewList-item .interview-image img {
     height: 48vw;
   }
-  #pg-shopDetail .shopList-Container .shopList-item .shop-body {
+  #pg-interviewDetail .interviewList-Container .interviewList-item .interview-body {
     padding: 14px 0;
     width: 100%;
   }
-  #pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-title {
+  #pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-title {
     font-size: 1.6rem;
   }
-  #pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-caption {
+  #pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-caption {
     margin-top: 3px;
     font-size: 1.2rem;
   }
-  #pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-detail {
+  #pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-detail {
     margin-top: 14px;
     padding: 13px;
     background-color: #fff;
   }
-  #pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-detail dl {
+  #pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-detail dl {
     font-size: 1.2rem;
   }
-  #pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-detail dl + dl {
+  #pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-detail dl + dl {
     margin-top: 10px;
   }
-  #pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-detail dl dt {
+  #pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-detail dl dt {
     min-width: 25.5%;
   }
-  #pg-shopDetail .shopList-Container .shopList-item .shop-body .shop-detail dl dd {
+  #pg-interviewDetail .interviewList-Container .interviewList-item .interview-body .interview-detail dl dd {
     min-width: 74.4%;
   }
-  #pg-shopDetail .shopList-Container .bg-shopList {
+  #pg-interviewDetail .interviewList-Container .bg-interviewList {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -3722,7 +3722,7 @@ iframe {
   height: 740px;
 }
 
-.page-template-page-shop-detail .lead-inner {
+.page-template-page-interview-detail .lead-inner {
   margin: 0 auto;
   padding-top: 6.7%;
 }
@@ -3732,7 +3732,7 @@ iframe {
   margin: 0 auto 5%;
 }
 
-#pg-shopDetail .lead-inner p {
+#pg-interviewDetail .lead-inner p {
   padding-top: 0px;
 }
 
@@ -4486,12 +4486,21 @@ input[type="submit"]::after {
   }
 }
 
-.page-template-page-interview-detail .lead-inner {
-  position: absolute;
+#pg-interviewDetail .lead-inner {
+  position: relative;
 }
 
-.page-template-page-interview-detail .lead-inner .title {
-  position: relative;
+#pg-interviewDetail .lead-inner .interview-title {
+  font-size: 1.8rem;
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+#pg-interviewDetail .lead-inner p:first-child {
+  position: absolute;
   top: 0;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -17,14 +17,23 @@ register_nav_menus(
         'place_footer' => 'フッターナビ'
     )
 );
-
+//親ページの名前を子ページが引き継ぐ
+function is_subpage() {
+    global $post;  // 現在の固定ページの詳細を読み込む
+ 
+    if (is_page() && $post->post_parent) { // 親を持つ固定ページであるかテスト
+        return $post->post_parent; // 親ページの ID を返す
+    } else {  // 親がなければ…
+        return false; // false を返す
+    }
+}
 // メイン画像上にテンプレートごとの文字列を表示
 function get_main_title()
 {
     if (is_singular('post')) :
         $category_obj = get_the_category();
         return $category_obj[0]->name;
-    elseif (is_page( 'recruit' ) == $post->post_parent) :
+    elseif(is_subpage('recruit')):
         return 'インタビュー';
     elseif (is_page()) :
         return get_the_title();
@@ -85,7 +94,7 @@ add_image_size('search', 168, 168, true);
 //各テンプレートごとのメイン画像を表示  string '' (lengt
 function get_main_image()
 {
-    if (is_page( 'recruit' ) == $post->post_parent) :
+    if (is_subpage('recruit')):
         return '<img src="' . get_template_directory_uri() . '/assets/images/bg-interview.jpeg" />';
     elseif (is_page() || is_singular('daily_contribution')) :
         $attachment_id = get_field('main_image');

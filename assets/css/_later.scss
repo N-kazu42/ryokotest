@@ -1,9 +1,18 @@
-.page-template-page-interview-detail{
+#pg-interviewDetail{
     .lead-inner{
-        position: absolute;
-        .title{
-            position:relative;
-            top: 0;
+        position:relative;
+        .interview-title{
+            font-size: 1.8rem;
+            position:absolute;
+            bottom: 20%;
+            left: 5%;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.7);
+            
+        }
+        p:first-child{
+            position:absolute;
+            top:0;
         }
     }
 }
