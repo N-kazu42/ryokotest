@@ -1,26 +1,4 @@
 <?php get_header(); ?>
-
-<!-- 営業所一覧 ーーーーーーーーーーーーーー-->
-<section class="section-contents" id="shop">
-  <div class="wrapper">
-
-    <?php
-    $shop_obj = get_page_by_path('office');
-    $post = $shop_obj;
-    setup_postdata($post);
-    $shop_title = get_the_title();
-    ?>
-
-    <span class="section-title-en">office Information</span>
-    <h2 class="section-title"><?php the_title(); ?></h2>
-    <p class="section-lead"><?php echo get_the_excerpt(); ?></p>
-
-    <div class="section-buttons">
-      <button type="button" class="button button-ghost" onclick="javascript:location.href = '<?php echo esc_url(home_url('office')); ?>';"><?php echo $shop_title; ?>一覧を見る
-      </button>
-    </div>
-  </div>
-</section>
 <!-- news一覧ーーーーーーーーーーーーー -->
 <section class="section-contents" id="news">
   <div class="wrapper">
@@ -60,6 +38,28 @@
     </div>
   </div>
 </section>
+<!-- 営業所一覧 ーーーーーーーーーーーーーー-->
+<section class="section-contents" id="office">
+  <div class="wrapper">
+
+    <?php
+    $shop_obj = get_page_by_path('office');
+    $post = $shop_obj;
+    setup_postdata($post);
+    $shop_title = get_the_title();
+    ?>
+
+    <span class="section-title-en">office Information</span>
+    <h2 class="section-title"><?php the_title(); ?></h2>
+    <p class="section-lead"><?php echo get_the_excerpt(); ?></p>
+
+    <div class="section-buttons">
+      <button type="button" class="button button-ghost" onclick="javascript:location.href = '<?php echo esc_url(home_url('office')); ?>';"><?php echo $shop_title; ?>一覧を見る
+      </button>
+    </div>
+  </div>
+</section>
+
 <!-- イベント情報を見る ーーーーーーーーーーーーーーーー-->
 <section class="section-contents" id="contribution">
   <div class="wrapper">
@@ -127,9 +127,7 @@
     ?>
     <span class="section-title-en">Enterprise Information</span>
     <h2 class="section-title"><?php the_title(); ?></h2>
-    <p class="section-lead">
-      <?php echo get_the_excerpt(); ?>
-    </p>
+    
     <div class="section-buttons">
       <button type="button" class="button button-ghost" onclick="javascript:location.href = '<?php echo esc_url(home_url('company')); ?>';">
         <!--ホームURLを返す関数この場合は/companyをつけて返す -->

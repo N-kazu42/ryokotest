@@ -1,0 +1,85 @@
+$base-color: #004695;
+$second-color: #185fb1;
+$bg-gray:#f7f7f7;
+$hamburger-color: #6c6c6c;
+
+//ブレイクポイントの種類を定義
+
+$breakpoint: (
+  sp: 'screen and (max-width: 480px)',
+  tab-l: 'screen and (max-width: 820px)',
+  tab: 'screen and (max-width: 768px)',
+  pc: 'screen and (max-width: 1080px)'
+);
+
+
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
+  }
+}
+
+//フレックス
+@mixin flex($justify: space-between, $align: center) {
+  display: flex;
+  display: -webkit-flex; //Safari,Android,iOS対応
+  display: -ms-flexbox; //IE対応
+  justify-content: $justify;
+  -webkit-box-pack: $justify; //Safari,Android,iOS対応
+  -ms-flex-pack: $justify; //IE対応
+  align-items: $align;
+  -webkit-box-align: $align; //Safari,Android,iOS対応
+  -ms-flex-align: $align; //IE対応
+}
+
+//ポジション
+@mixin position($top: 0, $right: auto, $bottom: auto, $left: 0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+//インナー
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.f-ci {
+  font-family: 'Cinzel', serif;
+}
+.f-nss{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.f-ns{
+  font-family: 'Noto Serif JP', serif;
+}
+.f-ug{
+  font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+}
+
+
+@mixin gradient($startColor:#FAD126, $endColor:#FF544F, $orientation: ttob) {
+	background: $startColor;
+	@if $orientation == ttob {
+		background: -webkit-linear-gradient(top, #{$startColor} 0%, #{$endColor} 100%);
+		background: linear-gradient(to bottom, #{$startColor} 0%,  #{$endColor} 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$startColor}', endColorstr=' #{$endColor}', GradientType=0);
+	} @else if $orientation == ltor {
+		background: -webkit-linear-gradient(right, #{$startColor} 0%, #{$endColor} 100%);
+		background: linear-gradient(to right, #{$startColor} 0%,  #{$endColor} 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$startColor}', endColorstr=' #{$endColor}', GradientType=1);
+	}
+}
+
+html {
+  scroll-behavior: smooth;
+}

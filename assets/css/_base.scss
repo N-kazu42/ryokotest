@@ -2314,7 +2314,7 @@ input {
 #news {
   background-image: url('../images/bg-section-news.jpg');
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-size: cover;
 
   .news {
     margin: 6% auto 0;
@@ -2372,9 +2372,7 @@ input {
   .main-container {
     width: 100%;
     background-image: url('../images/bg-news.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom center;
+    background-size: cover;
 
     .main-wrapper {
       margin: 0 auto;
@@ -3412,7 +3410,11 @@ input {
     }
   }
 }
-
+#office {
+  background-image: url('../images/bg-section-office.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #interview {
   background-image: url('../images/bg-section-interview.jpg');
   background-repeat: no-repeat;

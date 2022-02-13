@@ -18,14 +18,11 @@ register_nav_menus(
     )
 );
 //親ページの名前を子ページが引き継ぐ
-function is_subpage() {
+function is_subpage()
+{
     global $post;  // 現在の固定ページの詳細を読み込む
- 
-    if (is_page() && $post->post_parent) { // 親を持つ固定ページであるかテスト
-        return $post->post_parent; // 親ページの ID を返す
-    } else {  // 親がなければ…
-        return false; // false を返す
-    }
+    $parents_id = get_post_ancestors($post); // 親のidを取得する
+    return $parents_id[0]; //直近の親idを返す
 }
 // メイン画像上にテンプレートごとの文字列を表示
 function get_main_title()
@@ -33,7 +30,7 @@ function get_main_title()
     if (is_singular('post')) :
         $category_obj = get_the_category();
         return $category_obj[0]->name;
-    elseif(is_subpage('recruit')):
+    elseif (is_subpage() == '674') :
         return 'インタビュー';
     elseif (is_page()) :
         return get_the_title();
@@ -45,8 +42,10 @@ function get_main_title()
         return 'ページが見つかりません';
     elseif (is_singular('event')) :
         global $post;
-        $term_obj = get_the_terms($post->ID, 'event');
+        $term_obj = get_the_terms($post->ID, 'kinds');
         return $term_obj[0]->name;
+    elseif (is_post_type_archive('event')) :
+        return 'イベント';
     else :
         return 'News';
     endif;
@@ -94,8 +93,21 @@ add_image_size('search', 168, 168, true);
 //各テンプレートごとのメイン画像を表示  string '' (lengt
 function get_main_image()
 {
-    if (is_subpage('recruit')):
+    if (is_subpage() == '674') :
         return '<img src="' . get_template_directory_uri() . '/assets/images/bg-interview.jpeg" />';
+    elseif (is_post_type_archive('event')) :
+        return '<img src="' . get_template_directory_uri() . '/assets/images/bg-event.jpeg" />';
+    elseif (is_singular('event')) ://カスタム投稿タイプの詳細ページのヘッダー　共通のヘッダに設定をしている
+        global $post;
+        $term_obj = get_the_terms($post->ID, 'kinds');
+        $term_taxonomy = $term_obj[0]->taxonomy;
+        $term_id = $term_obj[0]->term_id;
+        $image_id = get_field('event_image', $term_taxonomy . '_' . $term_id);
+        if ($image_id) :
+            return wp_get_attachment_image($image_id, 'detail');
+        else :
+            return get_the_post_thumbnail($post->ID, 'detail');
+        endif;
     elseif (is_page() || is_singular('daily_contribution')) :
         $attachment_id = get_field('main_image');
         if ($attachment_id) :
@@ -108,7 +120,7 @@ function get_main_image()
         return '<img src="' . get_template_directory_uri() . '/assets/images/bg-page-news.jpg" />';
     elseif (is_search() || is_404()) :
         return '<img src="' . get_template_directory_uri() . '/assets/images/bg-page-search.jpg" />';
-    elseif (is_tax('event')) :
+    elseif (is_tax('kinds')) :
         $term_obj = get_queried_object();
         $image_id = get_field('event_image', $term_obj->taxonomy . '_' . $term_obj->term_id);
         if ($image_id) :
