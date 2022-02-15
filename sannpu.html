@@ -1,103 +1,119 @@
-<div class="recruit-wrapper">
-    <div class="lead-inner">
-
-        <h3 class="recruit-title">現在募集している職種は下記のとおりです。</h3>
-        <table class="recruit-table">
-            <tbody>
-                <tr>
-                    <th>職　　　種</th>
-                    <td>ルート営業・事務職</td>
-                </tr>
-                <tr>
-                    <th>対　　　象</th>
-                    <td>35歳未満</td>
-                </tr>
-                <tr>
-                    <th>就 業 場 所</th>
-                    <td>津市島崎町209番地の2（本社にて研修後、三重県内の各営業所へ配属）</td>
-                </tr>
-                <tr>
-                    <th>採 用 人 数</th>
-                    <td>3〜5名</td>
-                </tr>
-                <tr>
-                    <th>勤 務 時 間</th>
-                    <td>8:30～17:30</td>
-                </tr>
-                <tr>
-                    <th>雇 用 形 態</th>
-                    <td>正社員</td>
-                </tr>
-                <tr>
-                    <th>仕事の内容</th>
-                    <td>電設資材のルート営業
-                        電気工事店へ、電気工事材料（配線器具・火災報知機・電線・分電盤・制御盤など）
-                        照明器具・エアコンなどの営業・配達
-                        工場へ自動化・無人化を実現するためのＦＡ機器（ブレーカー、モーターなど）を取り扱う。</td>
-                </tr>
-                <tr>
-                    <th>給　　　与</th>
-                    <td>営業：220,000〜285,000円
-                        事務：180,000～200,000円
-                        その他：通勤手当</td>
-                </tr>
-                <tr>
-                    <th>必要資格等</th>
-                    <td>学歴：高校卒業以上
-                        免許：普通自動車運転免許（ＡＴ限定可）</td>
-                </tr>
-                <tr>
-                    <th>休日・休暇</th>
-                    <td>月8回以上／週休2日制（土・日）、祝日　1ヶ月におよそ1～2回程度の土曜出勤あり
-                        夏季休暇2日・年末年始12月29日～1月5日　年間休日110日　計画有給9日有り</td>
-                </tr>
-                <tr>
-                    <th>福利厚生等</th>
-                    <td>健康保険・厚生年金・雇用保険・労災保険
-                        財形預金・退職金・損害保険団体扱い制度あり</td>
-                </tr>
-                <tr>
-                    <th>賞　　　与</th>
-                    <td>年2回（7月・12月） + 業績により決算賞与として2月にも支給あり。</td>
-                </tr>
-            </tbody>
-        </table>
+<div id="pg-contact">
+    <p class="lead">
+        当社へのお問い合わせは、以下のフォームへのご入力をお願いいたします。<br />
+        フォームに<strong>必要事項をすべて入力</strong>した後、<a href="/privacy-policy">個人情報保護方針</a>に同意の上、 <br />
+        送信ボタンを押してください。
+    </p>
+    <div class="form-inner">
+        <div class="contact-form">
+            <div class="input-box">
+                <label class="label-area">お名前</label>
+                <div class="input-area">
+                    [text* your_name placeholder "お名前"]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">フリガナ</label>
+                <div class="input-area">
+                    [text* your_kana placeholder "ふりがな"]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">性別</label>
+                <div class="input-area">
+                    [radio your_sex label_first default:1 "男" "女"]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">生年月日</label>
+                <div class="input-area">
+                    [date* your_birthday placeholder "1999/01/01"]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">郵便番号</label>
+                <div class="input-area">
+                    [text* your_birthday placeholder "000-0000"]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">住所</label>
+                <div class="input-area">
+                    [text* your_birthday]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">電話番号</label>
+                <div class="input-area">
+                    [tel* your_tel]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">メールアドレス</label>
+                <div class="input-area">
+                    [email* your_email placeholder "aaaaa@aaaa.co.jp"]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">卒業学校名・最終学歴</label>
+                <div class="input-area">
+                    [text* your_school]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">学部・学科</label>
+                <div class="input-area">
+                    [text* your_Department]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">卒業年月日</label>
+                <div class="input-area">
+                    [text* your_graduation placeholder "2xxx年01月"]
+                </div>
+                <div class="input-area">
+                    [radio* your_graduation2 label_first default:1 "卒業" "卒業見込み""中退"]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">現職</label>
+                <div class="input-area">
+                    [radio your_job label_first default:1 "在職中" "退職済"]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">現在または以前の勤務先</label>
+                <div class="input-area">
+                    [text* your_jobs]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">取得資格</label>
+                <div class="input-area">
+                    [text* your_Qualification]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">資料請求</label>
+                <div class="input-area">
+                    [radio your_Document label_first default:1 "希望" "希望しない"]
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label-area">自由記入欄（質問など）</label>
+                <div class="input-area">
+                    [textarea content]
+                </div>
+            </div>
+            <div class="action-box">
+                [submit "上記内容で送信する"]
+            </div>
+        </div>
+        <div class="note">
+            <small>
+                お問い合わせの内容によっては、返信にお時間をいただく場合や、<br />
+                お答えできないことがございますことを予めご了承ください。
+            </small>
+        </div>
     </div>
 </div>
-
-
-array (size=1)
-  0 => 
-    object(WP_Term)[15788]
-      public 'term_id' => int 4
-      public 'name' => string '展示会・説明会' (length=21)
-      public 'slug' => string 'hold' (length=4)
-      public 'term_group' => int 0
-      public 'term_taxonomy_id' => int 4
-      public 'taxonomy' => string 'kinds' (length=5)
-      public 'description' => string '' (length=0)
-      public 'parent' => int 0
-      public 'count' => int 12
-      public 'filter' => string 'raw' (length=3)
-
-展示会・説明会
-トップページ
-イベント
-展示会・説明会
-業界・おしごと研究ＬＩＶＥｉｎＴＳＵに参加しました。
-
-bject(WP_Term)[15831]
-  public 'term_id' => int 4
-  public 'name' => string '展示会・説明会' (length=21)
-  public 'slug' => string 'hold' (length=4)
-  public 'term_group' => int 0
-  public 'term_taxonomy_id' => int 4
-  public 'taxonomy' => string 'kinds' (length=5)
-  public 'description' => string '' (length=0)
-  public 'parent' => int 0
-  public 'count' => int 12
-  public 'filter' => string 'raw' (length=3)
-
-展示会・説明会
-トップページ
-展示会・説明会

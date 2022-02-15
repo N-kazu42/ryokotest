@@ -1,4 +1,4 @@
-<li class="interviewList-item">
+<li class="interviewList-item downup">
     <div class="interview-image">
         <?php
         $image_id = get_sub_field('interview_img');

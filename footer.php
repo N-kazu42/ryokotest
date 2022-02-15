@@ -14,7 +14,7 @@
               <div class="enterprise-detail">
                 <p class="name">菱工産業株式会社</p>
                 <p class="address">
-                〒514-0002 津市島崎町209番地の2
+                  〒514-0002 津市島崎町209番地の2
                 </p>
               </div>
             </div>
@@ -37,6 +37,7 @@
         </footer>
         </div><!-- /.container -->
         <?php wp_footer(); ?>
+        
         </body>
 
         </html>

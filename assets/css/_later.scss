@@ -8,22 +8,21 @@
             left: 5%;
             padding: 2rem;
             background: rgba(255, 255, 255, 0.7);
-            @include mq(pc){
+            @include mq(pc) {
                 top: 55vh;
             }
-            @include mq(tab-l){
+            @include mq(tab-l) {
                 top: 50vh;
             }
-            @include mq(tab){
+            @include mq(tab) {
                 top: 30vh;
             }
-            @include mq(sp){
+            @include mq(sp) {
                 top: 15vh;
                 font-size: 1.2rem;
                 padding: 1rem;
             }
             @media screen and (max-width: 320px) {
-               
             }
         }
         p:first-child {
@@ -130,30 +129,85 @@
 }
 .archive-wrapper {
     padding-bottom: 2rem;
-    p{
+    p {
         text-align: center;
         font-size: 1.8rem;
     }
     ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content:center;
+        justify-content: center;
         li {
-            a{
-                
-                padding: .5rem 2rem;
+            a {
+                padding: 0.5rem 2rem;
                 color: #fff;
             }
             font-weight: bold;
             background: #127dd6;
             border-radius: 10px;
             margin: 1rem;
-            :hover{
+            :hover {
                 opacity: 0.8;
             }
         }
     }
 }
-.address{
+.address {
     font-size: 1.6rem;
+}
+.entry-button {
+    text-align: center;
+}
+.business {
+    .article-card {
+        .body {
+            box-shadow: 2px 8px 20px 0 rgba(31, 32, 68, 0.25);
+            -webkit-transform: scale(1.01);
+            -ms-transform: scale(1.01);
+            transform: scale(1.01);
+        }
+    }
+    .article-card:nth-child(n + 2) {
+        margin-top: 15%;
+    }
+    .image {
+        width: 600px;
+        @include mq(tab) {
+            width: 100%;
+        }
+    }
+}
+.downup {
+    opacity: 0;
+    transform: translate(0, 50px);
+    transition: 0.8s;
+    &.scrollin {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@for $i from 1 through 5 {
+    li:nth-child(#{$i}) {
+      animation-delay: 0.1s + ($i*0.5) ;
+    }
+  }
+
+  .start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
 }

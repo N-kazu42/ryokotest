@@ -1,4 +1,4 @@
-<li class="common-item">
+<li class="common-item downup">
     <a class="common-link" href="<?php the_permalink(); ?>">
         <div class="common-image">
             <?php the_post_thumbnail('common'); ?>

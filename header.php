@@ -10,7 +10,8 @@
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/common/favicon.ico" />
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Vollkorn:400i" rel="stylesheet" />
-  <?php wp_head(); ?></head>
+  <?php wp_head(); ?>
+</head>
 
 <body <?php body_class(); ?>>
   <div class="container">
@@ -27,16 +28,16 @@
         </button>
         <div class="header-nav">
           <nav class="global-nav">
-           <?php
-           wp_nav_menu(
-             array(
-               'theme_location' => 'place_global',
-               'container' => false
-             )
-             );
-             ?>
+            <?php
+            wp_nav_menu(
+              array(
+                'theme_location' => 'place_global',
+                'container' => false
+              )
+            );
+            ?>
           </nav>
-          <form class="search-form" role="search" method="get" action="<?php echo esc_url( home_url() ); ?>">
+          <form class="search-form" role="search" method="get" action="<?php echo esc_url(home_url()); ?>">
             <div class="search-box">
               <input type="text" class="search-input" name="s" placeholder="キーワードを入力してください" />
               <button type="submit" class="button-submit"></button>
@@ -49,33 +50,34 @@
         </div>
       </div>
     </header>
-    <?php if(is_front_page()):?> 
-         <section class="section-contents" id="keyvisual">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-main-ryoko2.jpeg" alt="MAIN IMAGE" />
-      <div class="wrapper">
-        <h1 class="site-title">For people,society,<br>and Future.</h1><?php //echo bloginfo('description'); ?>
-        <p class="site-caption">
-          <?php echo get_the_excerpt(); ?>
-        </p>
-      </div>
-    </section>
-<?php else: ?>
-  <div class="wrap">
-    <div id="primary" class="content-area">
-      <main>
-        <div class="page-contents">
-          <div class="page-head">
-            <?php echo get_main_image(); ?>
-            <div class="wrapper">
-              <span class="page-title-en"><?php the_field('english_title')?></span>
-              <h2 class="page-title"><?php echo get_main_title();?></h2>
-            </div>
-          </div>
-          <div class="page-container">
-            <!-- パンくずリストを表示 -->
-            <?php
-            if (function_exists('bread_crumb')):
-              bread_crumb();
-            endif;
-            ?>
-            <?php endif ; ?>
+    <?php if (is_front_page()) : ?>
+      <section class="section-contents" id="keyvisual">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-main-ryoko2.jpeg" alt="MAIN IMAGE" />
+        <div class="wrapper">
+          <h1 class="site-title">For people,society,<br>and Future.</h1><?php //echo bloginfo('description'); 
+                                                                        ?>
+          <p class="site-caption">
+            <?php echo get_the_excerpt(); ?>
+          </p>
+        </div>
+      </section>
+    <?php else : ?>
+      <div class="wrap">
+        <div id="primary" class="content-area">
+          <main>
+            <div class="page-contents">
+              <div class="page-head">
+                <?php echo get_main_image(); ?>
+                <div class="wrapper">
+                  <span class="page-title-en"><?php the_field('english_title') ?></span>
+                  <h2 class="page-title"><?php echo get_main_title(); ?></h2>
+                </div>
+              </div>
+              <div class="page-container">
+                <!-- パンくずリストを表示 -->
+                <?php
+                if (function_exists('bread_crumb')) :
+                  bread_crumb();
+                endif;
+                ?>
+              <?php endif; ?>

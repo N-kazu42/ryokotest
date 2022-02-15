@@ -29,27 +29,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ------------------------------------------------
-
-* Style Index
-	#. Cores
-	#. Layouts    :prefix[l-]
-	#. Components :prefix[c-]
-	#. Units
-	#. Utilities  :prefix[u-]
-	// #. Functions :prefix[js-]
-
------------------------------------------------- */
-/* ------------------------------------------------
-# Cores
------------------------------------------------- */
-/*!
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -151,7 +130,6 @@ html {
   font-size: 62.5%;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -4691,7 +4669,7 @@ input[type="submit"]::after {
 }
 
 .archive-wrapper ul li a {
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   color: #fff;
 }
 
@@ -4701,5 +4679,90 @@ input[type="submit"]::after {
 
 .address {
   font-size: 1.6rem;
+}
+
+.entry-button {
+  text-align: center;
+}
+
+.business .article-card .body {
+  -webkit-box-shadow: 2px 8px 20px 0 rgba(31, 32, 68, 0.25);
+          box-shadow: 2px 8px 20px 0 rgba(31, 32, 68, 0.25);
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.business .article-card:nth-child(n + 2) {
+  margin-top: 15%;
+}
+
+.business .image {
+  width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+  .business .image {
+    width: 100%;
+  }
+}
+
+.downup {
+  opacity: 0;
+  -webkit-transform: translate(0, 50px);
+          transform: translate(0, 50px);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.downup.scrollin {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+li:nth-child(1) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+li:nth-child(2) {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
+li:nth-child(3) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+li:nth-child(4) {
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+
+li:nth-child(5) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+.start {
+  background: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9000;
+}
+
+.start p {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+  width: 280px;
 }
 /*# sourceMappingURL=styles.css.map */

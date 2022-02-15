@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 <!-- news一覧ーーーーーーーーーーーーー -->
+<div class="start">
+    <p><img src="<?php echo get_template_directory_uri(). '/assets/images/common/logo-ryoko-fixed.svg' ?>"  alt=""></p>
+</div>
 <section class="section-contents" id="news">
   <div class="wrapper">
     <!--get_term_by関数を呼び出し、投稿のnewsスラッグの投稿を呼び出す -->
@@ -8,13 +11,14 @@
     <!--投稿カテゴリーの名前を呼び出す -->
     <p class="section-lead"></p>
     <!--投稿の説明を呼び出す -->
-    <ul class="news">
+    <ul class="news timelag">
       <?php
       $infoPosts = get_posts('numberposts=3');
+      $i =1;
       foreach ($infoPosts as $post) :
       ?>
 
-        <li class="news-item">
+        <li class="news-item downup">
           <a class="detail-link" href="<?php the_permalink(); ?>">
             <!--記事のリンクを取得 -->
             <time class="time"><?php the_time('Y/m/d'); ?></time>
@@ -76,14 +80,14 @@
     <?php wp_reset_postdata(); ?>
     <!--サブクエリを実行した後に、メインクエリに戻すときに記述する -->
 
-    <div class="articles">
+    <div class="articles downup">
 
       <?php
       $contribution_pages = get_specific_posts('event', 'kinds', '', 3); //変数からidを取得して子ページを表示していく
       if ($contribution_pages->have_posts()) : //子ページの固定ページがあるか判断
         while ($contribution_pages->have_posts()) : $contribution_pages->the_post();
       ?>
-          <article class="article-card">
+          <article class="article-card box1">
             <a class="card-link" href="<?php the_permalink(); ?>">
               <!--子ページのリンクを出力 -->
               <div class="card-inner">

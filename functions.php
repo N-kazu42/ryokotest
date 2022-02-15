@@ -6,7 +6,9 @@ function my_enqueue_scripts()
 {
     wp_enqueue_script('jquery');
     wp_enqueue_script('bundle_js', get_template_directory_uri() . '/assets/js/bundle.js', array());
+    wp_enqueue_script('original_js', get_template_directory_uri() . '/assets/js/original.js', array());
     wp_enqueue_style('my_styles', get_template_directory_uri() . '/assets/css/styles.css', array());
+
 }
 add_action('wp_enqueue_scripts', 'my_enqueue_scripts');
 
@@ -77,6 +79,8 @@ add_image_size('top', 1077, 622, true);
 
 //地域貢献活動一覧画像用のサイズ設定
 add_image_size('contribution', 557, 580, true);
+//事業紹介一覧画像用のサイズ設定
+add_image_size('business', 557, 800, true);
 
 //トップページの地域貢献活動にて使用している画像のサイズ設定
 add_image_size('front-contribution', 255, 189, true);
