@@ -211,3 +211,22 @@
 	z-index: 9999;
 	width: 280px;
 }
+.recruit-title {
+    font-size: 2.3rem;
+    @include mq(tab){
+        font-size: 1.8rem;
+    }
+    text-align: center;
+    margin: 3rem 0;
+    padding: 1rem 2rem;
+    color: #fff;
+    background: $base-color;
+    -webkit-box-shadow: 5px 5px 0 $second-color;
+    box-shadow: 5px 5px 0 $second-color;
+    &.second{
+        margin:7rem 0 0 0 ;
+        @include mq(sp){
+            margin: 7rem 0 3rem 0;
+        }
+    }
+}

@@ -808,7 +808,7 @@ input {
 
         .label-area {
           padding: 6px 0;
-          width: 25%;
+          width: 30%;
           font-size: 1.6rem;
         }
 
@@ -3479,6 +3479,9 @@ input {
     flex-wrap: wrap;
     margin: calc(-80px + 5.4%) auto 0;
     max-width: 960px;
+    @include mq(sp){
+      flex-direction: column;
+    }
   }
 
   .common-item {
@@ -3794,6 +3797,9 @@ input {
 
     margin: 30px 0 0;
     width: 48.55072%;
+    @include mq(sp){
+      width: 100%;
+    }
 
     .common-image img {
       height: 32vw;

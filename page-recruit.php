@@ -13,6 +13,9 @@
         エントリーはこちら
       </button>
     </div>
+    <div class="recruit-title second">
+      <h2>インタビュー</h2>
+    </div>
       <ul class="commons">
         <?php
         $common_pages = get_child_pages();
